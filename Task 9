@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class CurrencyNotes {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter amount to withdraw (in hundreds): ");
+        int amount = scanner.nextInt() * 100;
+        
+        int hundreds = amount / 100;
+        int fifties = (amount % 100) / 50;
+        int tens = ((amount % 100) % 50) / 10;
+        
+        System.out.println("Hundreds: " + hundreds);
+        System.out.println("Fifties: " + fifties);
+        System.out.println("Tens: " + tens);
+    }
+}
