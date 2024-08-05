@@ -1,0 +1,14 @@
+public class DistanceConversion {
+    public static void main(String[] args) {
+        double distanceKm = 2614;
+        double distanceMeters = distanceKm * 1000;
+        double distanceFeet = distanceKm * 3280.84;
+        double distanceInches = distanceKm * 39370.1;
+        double distanceCm = distanceKm * 100000;
+        
+        System.out.println("Distance in meters: " + distanceMeters);
+        System.out.println("Distance in feet: " + distanceFeet);
+        System.out.println("Distance in inches: " + distanceInches);
+        System.out.println("Distance in centimeters: " + distanceCm);
+    }
+}
