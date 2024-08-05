@@ -1,0 +1,19 @@
+
+public class ShapeCalculations {
+    public static void main(String[] args) {
+        double length = 36;
+        double breadth = 36;
+        double radius = 36;
+        
+        double rectangleArea = length * breadth;
+        double rectanglePerimeter = 2 * (length + breadth);
+        
+        double circleArea = Math.PI * radius * radius;
+        double circleCircumference = 2 * Math.PI * radius;
+        
+        System.out.println("Area of Rectangle: " + rectangleArea);
+        System.out.println("Perimeter of Rectangle: " + rectanglePerimeter);
+        System.out.println("Area of Circle: " + circleArea);
+        System.out.println("Circumference of Circle: " + circleCircumference);
+    }
+}
