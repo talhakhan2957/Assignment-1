@@ -1,0 +1,16 @@
+public class MarksCalculation {
+    public static void main(String[] args) {
+        int[] marks = {80, 90, 75, 60, 100};
+        int totalMarks = 0;
+        int maxMarks = 500;
+        
+        for (int mark : marks) {
+            totalMarks += mark;
+        }
+        
+        double percentage = (totalMarks / (double) maxMarks) * 100;
+        
+        System.out.println("Aggregate Marks: " + totalMarks);
+        System.out.println("Percentage Marks: " + percentage + "%");
+    }
+}
