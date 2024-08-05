@@ -7,7 +7,7 @@ public class DistanceConversion {
         double distanceCm = distanceKm * 100000;
         
         System.out.println("Distance in meters: " + distanceMeters);
-        System.out.println("Distance in feet: " + distanceFeet);
+        
         System.out.println("Distance in inches: " + distanceInches);
         System.out.println("Distance in centimeters: " + distanceCm);
     }
