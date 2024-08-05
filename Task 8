@@ -1,0 +1,18 @@
+public class LiteracyCalculation {
+    public static void main(String[] args) {
+        int totalPopulation = 80000;
+        double percentMen = 0.52;
+        double percentLiterate = 0.48;
+        double percentLiterateMen = 0.35;
+        
+        int totalMen = (int)(totalPopulation * percentMen);
+        int literateMen = (int)(totalPopulation * percentLiterateMen);
+        int literateWomen = (int)(totalPopulation * percentLiterate) - literateMen;
+        
+        int illiterateMen = totalMen - literateMen;
+        int illiterateWomen = (totalPopulation - totalMen) - literateWomen;
+        
+        System.out.println("Illiterate men: " + illiterateMen);
+        System.out.println("Illiterate women: " + illiterateWomen);
+    }
+}
