@@ -1,0 +1,12 @@
+public class CostPriceCalculation {
+    public static void main(String[] args) {
+        double totalSellingPrice = 3000; // Assuming total selling price for 15 items is given
+        double profitPercentage = 0.20;
+        
+        double totalProfit = totalSellingPrice * profitPercentage;
+        double totalCostPrice = totalSellingPrice - totalProfit;
+        double costPricePerItem = totalCostPrice / 15;
+        
+        System.out.println("Cost Price of one item: " + costPricePerItem);
+    }
+}
